@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>FacePay</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="global.css">
+        <link rel="icon" href="./images/favicon.png" type="image/icon type">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:500&display=swap" rel="stylesheet">
+        <script defer type="text/javascript" src="./script.js"></script>
+        <script defer type="module" src="./src/logout.js"></script>
+    </head>
+    <body>
+        <header>
+            <a class="logo"><img class="logo-img" src="./images/logo.png" alt="logo" onclick="clickLogoImg()"></a>
+            <a id="signup" class="signup-class">Sign Up</a>
+            <a id="login" class="login-class">Log In</a>
+            <a id="profile" class="profile-class">
+                <img class="profile-logo" id="profileLogo" src="./images/profileM.jpg" alt="profile"/>
+            </a>
+        </header>
+
+        <main>
+            <div id="main" class="main-container">
+                <div class="welcome-container">
+                    <p class="welcome-text0">Welcome to FacePay!</p>
+                    <p class="welcome-text">Forgot PIN, Password? Do Not Worry!</p>
+                    <p class="welcome-text">Just select the service and pay using face authentication. Yes! it's that simple.</p>
+                </div>
+
+                <div class="transaction-type-container">
+                    <ul class="transaction-type">
+                        <li><span id="wallet-switch">Wallet Transfer</span></li>
+                        <li><span id="bank-switch">Bank Transfer</span></li>
+                    </ul>
+                </div>
+
+                
+                <div class="transaction-container">
+
+                    <div id="wallet-transfer-container" class="unhide">
+                        <div id="wallet-transfer" class="transfer-type">
+                            <p class="transfer-title">Wallet Transfer</p>                        
+                            <div class="transfer-detail">
+                                <div class="transfer-form wallet-form">
+                                    <span class="box-title">Mobile Number</span>
+                                    <input class="box-input" type="text" placeholder="Enter Mobile Number"/>
+                                </div>
+                                <div class="transfer-form wallet-form">
+                                    <span class="box-title">FacePay-ID</span>
+                                    <input class="box-input" type="text" placeholder="FacePay-ID"/>
+                                </div>
+                                <div class="transfer-form wallet-form last-form-input-wallet">
+                                    <span class="box-title">Amount</span>
+                                    <input class="box-input" type="text" placeholder="Enter Amount"/>
+                                </div>        
+                            </div>    
+                        </div>
+                        <div class="imgBx">
+                            <img src="../images/wallet.jpg">
+                        </div>       
+                    </div>
+
+                    <div id="bank-transfer-container" class="hide">
+                        <div class="imgBx">
+                            <img src="../images/bank.jpg">
+                        </div> 
+                        <div id="bank-transfer" class="transfer-type">
+                            <p class="transfer-title">Bank Transfer</p>                        
+                            <div class="transfer-detail">
+                                <div class="transfer-form bank-form">
+                                    <span class="box-title">Beneficiary Name</span>
+                                    <input class="box-input" type="text" placeholder="Name on Bank Account"/>
+                                </div>
+                                <div class="transfer-form bank-form">
+                                    <span class="box-title">Account Number</span>
+                                    <input class="box-input" type="text" placeholder="Account Number"/>
+                                </div>
+                                <div class="transfer-form bank-form">
+                                    <span class="box-title">IFSC Code</span>
+                                    <input class="box-input" type="text" placeholder="IFSC Code"/>
+                                </div>
+                                <div class="transfer-form bank-form last-form-input-bank">
+                                    <span class="box-title">Amount</span>
+                                    <input class="box-input" type="text" placeholder="Enter Amount"/>
+                                </div>     
+                            </div>      
+                        </div>
+                    </div>
+                
+                </div>
+            </div>
+        </main>
+        
+        <footer id="footer">
+            <div class="submit-container">
+                <button id="home-next-btn" class="submit-btn" onclick="clickHomeNextBtn()">Next</button>
+            </div>
+        </footer>
+    </body>
+</html>

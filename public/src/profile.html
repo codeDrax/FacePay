@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Profile - FacePay</title>
+        <link rel="icon" href="../images/favicon.png" type="image/icon type">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:500&display=swap" rel="stylesheet">
+        <link href="./profile.css" rel="stylesheet">
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <script defer type="module" src="./profile.js"></script>
+    </head>
+    <body>
+        <header id="header">
+            <a class="logo" id="logo"><img class="logo-img" src="../images/logo.png" alt="logo"></a>
+        </header>
+
+        <div class="message-container">
+            <p id="upload-text" class="hide">Upload Status</p>
+        </div>
+
+        <main>
+            <div class="profile-card">
+                <div class="left-container">
+                    <div class="photo-container">
+                        <img id="photo" src="../images/profileM.jpg">
+                        <input id="file" type="file">
+                        <label id="uploadBtn" for="file">Upload Photo</label>
+                    </div>
+                </div>
+
+                <div class="right-container">
+                    <div id="profile-details" class="profile-container">
+                        <p class="profile-text-title">Name: <span id="name" class="profile-text">NA</span></p>
+                        <p class="profile-text-title">Email: <span id="email" class="profile-text">NA</span></p>
+                        <p class="profile-text-title">Username: <span id="username" class="profile-text">NA</span></p>
+                        <p class="profile-text-title">Mobile: <span id="phone" class="profile-text">NA</span></p>
+                        <p class="profile-text-title">FacePay ID: <span id="payid" class="profile-text">NA</span></p>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        <footer id="footer">
+            <div class="save-container">
+                <button id="save-btn" class="save-btn unhide">Save</button>
+            </div>
+        </footer>
+    </body>
+</html>

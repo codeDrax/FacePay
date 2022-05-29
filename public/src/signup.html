@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Sign Up - FacePay</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="../images/favicon.png" type="image/icon type">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./signup.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js" ></script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <script defer type="module" src="./signup.js"></script>
+    </head>
+    <body>
+        <header id="header">
+            <a class="logo" id="logo"><img class="logo-img" src="../images/logo.png" alt="logo" onclick="clickLogoImg()"></a>
+            <script>const clickLogoImg = () => window.location.href = '../index.html'</script>
+        </header>
+
+        <main>
+            <div class="section-container">
+                <div class="imgBx">
+                    <img src="../images/signupM.jpeg">
+                </div>
+
+                <div class="mb-5">
+                    <h3 class="mb-3">Welcome to FacePay!</h3>
+                    <input type="text" placeholder="Full Name" id="nameInp" class="form-control mb-3 topper">
+                    <input type="text" placeholder="Email" id="emailInp" class="form-control mb-3">
+                    <input type="text" placeholder="Username" id="userInp" class="form-control mb-3">
+                    <input type="text" placeholder="Phone Number" id="phoneInp" class="form-control mb-3">
+                    <input type="password" placeholder="Password" id="passInp" class="form-control mb-3">
+                    <button type="text"  id="sub_btn" class="btn w-100 btn-outline-primary mb-3">Register</button>
+                    
+                    <div class="ask-account">
+                        Already have an account!
+                        <a href="./login.html" class="ask-account-link">Log In</a>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>

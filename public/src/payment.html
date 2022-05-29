@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Thanks for using FacePay</title>
+        <link rel="icon" href="../images/favicon.png" type="image/icon type">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./payment.css">
+        <script defer src="./payment.js" ></script>
+    </head>
+    <body>
+        <header id="header">
+            <a class="logo"><img class="logo-img" src="../images/logo.png" alt="logo" onclick="clickLogoImg()"></a>
+        </header>
+
+        <main id="main">
+            <p id="thanks-message" class="message">Thank you for using FacePay.</p>
+            <img class="success" src="../images/success.gif" alt="success-icon">
+            <div class="failed hide">
+                <script defer src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+                <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_ddxv3rxw.json" 
+                    mode="bounce" 
+                    background="transparent"  
+                    speed="1.25"  
+                    style="width: 150px; height: 150px; margin: 1.25rem auto;"
+                    loop autoplay>
+                </lottie-player>
+            </div>
+            <p id="success-message" class="message">Success!</p>
+            <p id="request-message" class="message">Your request has been processed successfully.</p>
+            <p id="failure-reason" class="message hide">Face was not verified successfully.</p>
+            <p id="redirecting-message" class="message">You will be redirected to home page shortly or click 'Home' to return to home page.</p>
+        </main>
+
+        <footer id="footer">
+            <div class="submit-container">
+                <button id="home-btn" class="submit-btn" onclick="clickHomeBtn()">Home</button>
+            </div>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,283 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.hide {
+  display: none !important;
+}
+
+.unhide {
+  display: block;
+}
+
+/* header section starts */
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 16px 10%;
+  background-color: white;
+}
+
+.logo {
+  cursor: pointer;
+  margin-right: auto;
+}
+
+.logo-img {
+  width: auto;
+  height: 50px;
+}
+
+#signup {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: #002447;
+  text-decoration: none;
+  padding: 0px 10px;
+  cursor: pointer;
+  transition: color 0.3s ease 0s;
+}
+
+#signup:hover {
+  color: #0073cf;
+}
+
+#login {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  padding: 9px 25px;
+  background-color: #0073cf;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease 0s;
+}
+
+#login:hover {
+  background-color: #002447;
+}
+
+#profile {
+  cursor: pointer;
+  text-align: center;
+  margin: 0px 10px;
+}
+
+.profile-logo {
+  height: 50px;
+  width: 50px;
+  object-fit: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+/* header section ends */
+
+/* main section starts */
+
+.main-container {
+  margin: 0% 10%;
+}
+
+.welcome-container {
+  padding: 1% 5% 1% 5%;
+  background-color: white;
+}
+
+.welcome-text {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: #0073cf;
+  text-decoration: none;
+  text-align: center;
+}
+
+.welcome-text0 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  color: #0073cf;
+  text-decoration: none;
+  text-align: center;
+}
+
+.transaction-type-container {
+  padding: 1% 10% 1% 10%;
+  background-color: white;
+}
+
+.transaction-type {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.transaction-type span {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: #002447;
+  text-decoration: none;
+  padding: 5px 15px;
+}
+
+.transaction-type span:hover {
+  background-color: #ffc439;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.transaction-container {
+  width: auto;
+  padding: 1% 3%;
+  background-color: #002447;
+  border-radius: 20px;
+}
+
+#wallet-transfer-container {
+  display: flex;
+}
+
+#bank-transfer-container {
+  display: flex;
+}
+
+.transfer-type {
+  position: relative;
+  width: 50%;
+  height: auto;
+}
+
+.transfer-type:Before {
+  content: '';
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#bank-transfer-container .transfer-type {
+  margin: 0 0 0 1.25%;
+}
+
+.transfer-title {
+  font-size: 1.5em;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  margin: 0 2.5%;
+  padding: 1% 0 1% 0; 
+}
+
+#bank-transfer-container .transfer-title {
+  margin: 0 2.5%;
+  text-align: end;
+}
+
+.transfer-detail {
+  background: white;
+  margin: 0 2.5% 0 0;
+  border-radius: 20px;
+}
+
+#bank-transfer-container .transfer-detail {
+  margin: 0;
+}
+
+.transfer-form {
+  display: flex;
+  flex-direction: column;
+  letter-spacing: 1px;
+  color: grey;
+}
+
+.wallet-form {  
+  padding: 10px 15px;
+}
+
+.last-form-input-wallet {
+  padding: 10px 15px 20px 15px;
+}
+
+.bank-form {
+  padding: 10px 15px 0 15px;
+}
+
+.last-form-input-bank {
+  padding: 10px 15px;
+}
+
+.box-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 11px;
+  color: #0073cf;
+  padding: 0 0 5px 10px;
+}
+
+.box-input {
+  font-size: 14px;
+  color: grey;
+  letter-spacing: 1px;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.imgBx {
+  width: 50%;
+  margin: 0 0 0 1.25%;
+}
+
+.imgBx img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+#bank-transfer-container .imgBx {
+  margin: 0 1.25% 0 0;
+}
+
+/* main section ends */
+
+/* footer section starts */
+
+.submit-container {
+  margin: 1% 10%;
+  padding: 1% 5% 1% 5%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.submit-btn {
+  background-color: #ffc439;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: #002447;
+  border: none;
+  text-decoration: none;
+  border-radius: 25px;
+  height: 40px;
+  width: 150px;
+  cursor: pointer;
+  transition: background-color 0.3s ease 0s;
+  letter-spacing: 1px;
+}
+
+.submit-btn:hover {
+  background-color: #fba81c;
+}
+
+
+/* footer section ends */

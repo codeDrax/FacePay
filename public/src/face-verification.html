@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Face Verification - FacePay</title>
+        <link rel="icon" href="../images/favicon.png" type="image/icon type">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="face-verification.css">
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <script defer src="./face-api.min.js"></script>
+        <script defer src="./face-verification.js"></script>
+    </head>
+             
+    <body>
+        <header id="header">
+            <a class="logo"><img class="logo-img" src="../images/logo.png" alt="logo" onclick="clickLogoImg()"></a>
+        </header>
+
+        <div class="message-container">
+            <p id="message">Loading...</p>
+        </div>
+
+        <main id="main">
+            <!-- use below line code for rectangular view and also make the border-radius 25px -->
+            <!-- <video id="videoElement" width="500px" height="375px" autoplay muted>Camera is not supported in this browser! Try using another browser.</video> -->
+            <video id="videoElement" width="400px" height="400px" autoplay muted>Camera is not supported in this browser! Try using another browser.</video>
+        </main>
+        
+        <footer id="footer">
+            <div class="submit-container">
+                <button id="start-btn" class="submit-btn hide" onclick="clickStartBtn()">Start Verification</button>
+            </div>
+        </footer>
+    </body>
+</html>

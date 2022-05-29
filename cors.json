@@ -1,0 +1,7 @@
+[
+    {
+      "origin": ["http://localhost:3000/", "https://facepay-b93d2.web.app"],
+      "method": ["GET"],
+      "maxAgeSeconds": 3600
+    }
+  ]

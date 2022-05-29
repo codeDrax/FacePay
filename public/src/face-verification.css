@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .unhide {
+    display: block;
+  }
+
+  /* for swal from sweetalert.js */
+  .swal-title {
+    font-family: "Monteserrat", sans-serif;
+    color: black;
+  }
+
+  .swal-text {
+    font-family: "Monteserrat", sans-serif;
+    text-align: center;
+    color: 	#2f3337;
+  }
+
+  .swal-button--confirm {
+    font-family: "Monteserrat", sans-serif;
+    background-color: #0073cf;
+  }
+
+  .swal-button--confirm:hover {
+    background-color: #002447;
+  }
+
+  /* end of swal */
+
+  /* header section starts */
+  
+  header {
+    text-align: center;
+    padding: 1% 5% 1% 5%;
+    background-color: white;
+  }
+  
+  .logo {
+    cursor: pointer;
+  }
+
+  .logo-img {
+    width: auto;
+    height: 50px;
+  }
+
+  /* header section ends */
+
+  /* main section starts */
+
+  main {
+    width: auto;
+    text-align: center;
+    margin: 1% 10%;
+    padding: 0% 5% 0% 5%;
+  }
+
+  .message-container {
+    margin: 0% 10%;
+    padding: 2% 5% 0% 5%;
+    background-color: white;
+  }
+
+  #message {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    color: #0073cf;
+    text-decoration: none;
+    text-align: center;
+  }
+
+  #videoElement {
+      color: white;
+      background-color: #666;
+      transform: scaleX(-1);
+      border: 5px #333 solid;
+      /* border-radius: 25px; */
+      border-radius: 50%;
+      object-fit: cover; 
+  }
+
+  canvas {
+      position: absolute;
+      top: 0;
+      left: 0;
+      margin: 10.4%;
+      padding: 0 26.4%;
+      transform: scaleX(-1);
+  }
+
+  /* main section ends */
+
+  /* footer section starts */
+
+  .submit-container {
+    margin: 1% 10%;
+    padding: 1% 5% 1% 5%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .submit-btn {
+    background-color: #ffc439;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: #002447;
+    text-decoration: none;
+    border-radius: 25px;
+    border: none;
+    height: 40px;
+    width: 200px;
+    cursor: pointer;
+    transition: background-color 0.3s ease 0s;
+    letter-spacing: 1px;
+  }
+  
+  .submit-btn:hover {
+    background-color: #fba81c;
+  }
+
+  .pay-btn {
+    width: 150px;
+    letter-spacing: 2px;
+    color: white;
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+  }
+
+  .pay-btn:hover {
+    background-color: #449d44;
+    border-color: #398439;
+  }
+
+  /* footer section ends */
