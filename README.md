@@ -5,6 +5,8 @@
 This is my attempt to make a Face Recognition System for facilitating secure transactions. The application is designed such that the user had to first register and before doing any transaction, he/she had to update his/her profile picture. The system will use that same face for the reference and while making the transaction, it detects the person in front of the camera and then matches the face (in front of camera) with that referenced (registered user's) image.
 
 The transaction proceeds when the face is detected, recognised and matched with the registered user otherwise the transaction is terminated.
+
+
 https://www.youtube.com/watch?v=-gx1-4fLTf4&lc=UgwK4QJ7QgIvJNXnCNZ4AaABAg&ab_channel=DiptiSharma
 
 <!-- Images -->
